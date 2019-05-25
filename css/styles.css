@@ -37,3 +37,18 @@
     text-decoration: none;
     color: #FFF;
 }
+.contactform{
+    background: yellow;
+    width: 100%;
+    
+    max-width: 480px;
+}
+.slider{
+    background: orange;
+    width: calc(100% - 480px);
+    
+}
+section{
+    display: flex;
+    height: calc(100vh - 100px)
+}
