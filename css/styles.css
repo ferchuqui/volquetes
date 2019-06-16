@@ -1,17 +1,31 @@
 /*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
 * {
     padding: 0;
-    margin: 0;
-    
+    margin: 0;   
+  }
+  body{
+      padding-top: 46px;
+  }
+  h1{
+      text-align: center;
+  }
+  h3{
+      text-align: center;
   }
 
 .nav{
+    width: 100%;
     max-width: 100%;
     background: red;
     height: 46px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
 
+}
+.inicio{
+    width:98%;
 }
 .navbar{
     max-width: 1200px;
@@ -36,6 +50,7 @@
 .navbar ul li a{
     text-decoration: none;
     color: #FFF;
+    margin-right: 30px;
 }
 .contactform{
     background: yellow;
@@ -49,11 +64,17 @@
 }
 section{
     display: flex;
-    height: calc(100vh - 46px)
+    height: calc(100vh - 46px);
+    margin: 0 auto;
+}
+section h2{
+    /* position: center; */
+    margin-top: 20px;
+    text-align: center;
 }
 .form-control{
     display: block;
-    width: 100%;
+    width: calc(100% - 1.5rem);
     padding: .375rem .75rem;
     line-height: 1.5;
     color: #495057;
@@ -62,3 +83,12 @@ section{
     transition: border-color .15s ease-in-out, box-shadow 15s ease-in-out;
     /* align-items: center; */
 }
+.slider img{
+    width: 865px;
+    height: 580px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
+    }
