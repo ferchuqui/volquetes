@@ -27,6 +27,7 @@
 .inicio{
     width:98%;
     flex-direction: row;
+    padding-top: 46px;
 }
 .navbar{
     max-width: 1200px;
@@ -70,6 +71,7 @@ section{
     height: calc(100vh - 46px);
     margin: 0 auto;
     flex-direction: column;
+    padding-top: 46px;
 }
 section h2{
     /* position: center; */
@@ -90,6 +92,9 @@ section h2{
 .slider img{
     width: 865px;
     height: calc(100vh - 46px)
+}
+#servicios{
+    /* padding-top: 46px; */
 }
 
 /* Set the size of the div element that contains the map */
