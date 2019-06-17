@@ -27,7 +27,7 @@
 .inicio{
     width:98%;
     flex-direction: row;
-    padding-top: 46px;
+    /* padding-top: 46px; */
 }
 .navbar{
     max-width: 1200px;
@@ -99,9 +99,12 @@ section h2{
 
 /* Set the size of the div element that contains the map */
 .map {
+
     background: red;
     height: 400px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
+    width: 600px;  /* The width is the width of the web page */
+    margin: auto;
+    z-index: -1;
    }
 
 /* Smartphones (portrait and landscape) ----------- */
