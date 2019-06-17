@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Volquetes</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="./images/Volquetes1.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav class="nav">
             <div class="navbar">
-                    <img width="75px" height="50px" class="logo" src="/images/bechamel.png" alt="logo" >
+                    <img width="75px" height="45px" class="logo" src="/images/Volquetes1.png" alt="logo" >
+                    <h1>Volquetes Martina</h1>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Cobertura</a></li>
-                        <li><a href="#">Quienes Somos</a></li>
-                        <li><a href="#">Servicio</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#cobertura">Cobertura</a></li>
+                        <li><a href="#quienes">Quienes Somos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
             </div>
         </nav>
@@ -37,17 +39,40 @@
             <textarea class="form-control" name="formContactoMensaje" id="formContactoMensaje" cols="45" rows="5" placeholder="Mensaje" required></textarea>
         </div>
     </section>
-    <section id="Cobertura">
+    <section id="cobertura">
         <h2>Cobertura</h2>
+        <p>Atendemos Countries, Empresas y particulares.
+            Alquilamos especialmente en la Zona Oeste del Gran Buenos Aires.
+            Su consulta no molesta.</p>
+        <h3>My Google Maps Demo</h3>
+        <!--The div element for the map -->
+        <div class="map" id="map"></div>
+
     </section>
     <section id="quienes">
         <h2>Quienes Somos</h2>
+        <p>
+            Somos una empresa familiar dedicada al alquiler de volquetes y volquetines. 
+            Somos una empresa seria y responsable con las necesidades de sus clientes. Ofrecemos la mejor atención.
+        </p>
     </section>
     <section id="servicios">
         <h2>Nuestros Servicios</h2>
+        Alquilamos volquetes grandes por un periodo de 48 a 72 horas.
+        Amplio stock disponible.
+    
+    INCLUYE
+    Alquiler de volquetes grandes (5 m3) y medianos (2 m3), por un período de 48 a 72 hs. Sólo se abona el valor del alquiler del volquete.
+    En caso de terminarlo antes, nos avisas y lo retiramos antes. 
+    
+    No incluye operarios/peones. 
     </section>
     <section id="contacto">
         <h2>Contactenos</h2>
     </section>
+    <script src="./js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO4nmY_t6nh7Te0Z952z-hDapfB2zsGrI&callback=initMap">
+    </script>
 </body>
 </html>

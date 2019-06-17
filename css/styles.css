@@ -16,7 +16,7 @@
 .nav{
     width: 100%;
     max-width: 100%;
-    background: red;
+    background: #333333;
     height: 46px;
     display: flex;
     justify-content: center;
@@ -26,17 +26,20 @@
 }
 .inicio{
     width:98%;
+    flex-direction: row;
 }
 .navbar{
     max-width: 1200px;
-    background: blue;
+    background-color: transparent;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-
-    
+}
+.navbar h1{
+    color: white;
+    float: left;
 }
 .navbar ul{
     margin: 10px;
@@ -66,6 +69,7 @@ section{
     display: flex;
     height: calc(100vh - 46px);
     margin: 0 auto;
+    flex-direction: column;
 }
 section h2{
     /* position: center; */
@@ -85,10 +89,18 @@ section h2{
 }
 .slider img{
     width: 865px;
-    height: 580px;
+    height: calc(100vh - 46px)
 }
+
+/* Set the size of the div element that contains the map */
+.map {
+    background: red;
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* Styles */
     }
+
