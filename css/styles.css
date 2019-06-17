@@ -106,13 +106,19 @@ section p{
 
     background: red;
     height: 400px;  /* The height is 400 pixels */
-    width: 600px;  /* The width is the width of the web page */
+    width: 50%;  /* The width is the width of the web page */
     margin: auto;
+    /* float: right; */
     z-index: -1;
    }
 
+
+.quienes{
+    background-image: url(../images/f08b0475-f227-4a2b-a8e9-281150fc1156.jpeg);
+    background-size: cover;
+    color: yellow;
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* Styles */
     }
-
