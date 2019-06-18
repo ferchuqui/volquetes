@@ -104,7 +104,7 @@ section p{
 /* Set the size of the div element that contains the map */
 .map {
 
-    background: red;
+    /* background: red; */
     height: 400px;  /* The height is 400 pixels */
     width: 50%;  /* The width is the width of the web page */
     margin: auto;
@@ -117,6 +117,18 @@ section p{
     background-image: url(../images/f08b0475-f227-4a2b-a8e9-281150fc1156.jpeg);
     background-size: cover;
     color: yellow;
+}
+.cobertura{
+    background-size: cover;
+    background-color: red;
+}
+.servicios{
+    background-size: cover;
+    background-color: pink;
+}
+.contacto{
+    background-size: cover;
+    background-color: lightblue;
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
