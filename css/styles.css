@@ -29,7 +29,26 @@
     width:98%;
     flex-direction: row;
     /* padding-top: 46px; */
+    /* align-items: center; /* Para centrar los elementos cuando están en columna */
 }
+
+@media (max-width: 768px) {
+    .inicio {
+        flex-direction: column;
+        align-items: center; /* Para centrar los elementos cuando están en columna */
+    }
+
+    .slider {
+        width: 100%; /* O un porcentaje adecuado como 90% o 95% si se quiere margen */
+        margin-bottom: 20px; /* Añade un margen si el slider queda encima del formulario */
+    }
+
+    .contactform {
+        width: 90%; /* O 100% si se prefiere, ajustando el max-width si es necesario */
+        max-width: none; /* Anula el max-width de 480px para que pueda ser más ancho si es necesario, o ajústalo */
+    }
+}
+
 .navbar{
     max-width: 1200px;
     background-color: transparent;
@@ -58,9 +77,12 @@
     margin-right: 30px;
 }
 .contactform{
-    background: yellow;
+    background-color: #f9f9f9;
     width: 100%;
     max-width: 480px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .slider{
     /* background: orange; */
@@ -85,13 +107,20 @@ section p{
 .form-control{
     display: block;
     width: calc(100% - 1.5rem);
-    padding: .375rem .75rem;
+    padding: 10px;
     line-height: 1.5;
-    color: #495057;
-    border: 1px solid #ced4da;
-    border-radius:.25 rem;
-    transition: border-color .15s ease-in-out, box-shadow 15s ease-in-out;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     /* align-items: center; */
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.form-control:focus{
+    border-color: #777;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 .slider img{
     width: 865px;
@@ -133,4 +162,52 @@ section p{
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* Styles */
+    .inicio {
+        flex-direction: column;
+        align-items: center;
     }
+    .slider {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contactform {
+        width: 90%;
+        max-width: none;
+    }
+}
+.titleform, .subtitleform {
+    text-align: center;
+}
+
+.titleform {
+    margin-bottom: 10px;
+}
+
+.subtitleform {
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    display: block; /* Para que ocupe su propia línea */
+    width: 100%; /* O un ancho específico si se prefiere, ej. 'auto' para que se ajuste al texto */
+    padding: 12px 20px;
+    margin-top: 15px; /* Espacio arriba del botón */
+    background-color: #333; /* Un color oscuro para el botón */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem; /* O 16px */
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #555; /* Un poco más claro al pasar el mouse */
+}
+
+.btn-submit:active {
+    background-color: #222; /* Un poco más oscuro al hacer clic */
+    transform: translateY(1px); /* Efecto de presión sutil */
+}
